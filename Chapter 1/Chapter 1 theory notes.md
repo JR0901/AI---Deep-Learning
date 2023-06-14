@@ -23,6 +23,9 @@ Difference between neural networks and logic gates:
 - Learning algorithms can be used to automatically design neural networks by learning from example.
 
 ## The Perceptron Learning Algorithm
+
+[Code snippet 2](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%202.py)
+
 How do we determine the weights that affect the z values? -> Use the perceptron learning algorithm
 Perceptron learning algorithm is a supervised learning algorithm
 -> implies that the model is given inputs and desired output data (ground truth).
