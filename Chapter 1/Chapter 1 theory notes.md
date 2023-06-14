@@ -23,3 +23,30 @@ Difference between neural networks and logic gates:
 - Learning algorithms can be used to automatically design neural networks by learning from example.
 
 ## The Perceptron Learning Algorithm
+How do we determine the weights that affect the z values? -> Use the perceptron learning algorithm
+Perceptron learning algorithm is a supervised learning algorithm
+-> implies that the model is given inputs and desired output data (ground truth).
+-> with the expectation that the model will learn the relationship between the input and output
+
+unsupervised learning - learning algorithm that finds patterns in the data itself with no ground truth.
+Example - natural language text
+
+Model = network
+Training a model -> figuring out/calculating weights for a network consisting of one or more neurons
+
+The algorithm in code snip 1
+- Randomly initialise the weights
+- Select one I/O pair at random
+- Present the values x1,..., xn to the perceptron to compute output y
+- If the output y is different from the ground truth for the I/O pair, adjust the weights as following:
+  - if y<0, add ηxi to each wi
+  - if y>0, subtract ηxi from each wi
+- Repeat until perceptron predicts all examples correctly.
+
+For some sets of I/O values the algorithm will not converge.
+If there is a set of weights that lets the perceptron represent the I/O pairs then the algorithm will converge.
+
+Learning rate = η -> arbitrary constant -> hyperparameter - parameter not adjusted by the learning algorithm but can still be adjusted.
+
+Setting the learning rate to != 1 can lead to a faster convergance.
+Weight adjustments may vary because inputs vary (not only 1 & -1 like in previous example)
