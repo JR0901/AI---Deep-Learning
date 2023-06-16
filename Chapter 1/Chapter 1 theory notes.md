@@ -54,7 +54,24 @@ Weight adjustments may vary because inputs vary (not only 1 & -1 like in previou
 
 The above code shows learning of the NAND function.
 
-Any real number input will produce either a 1 or -1 output.
+Any real number input will produce either a 1 or -1 output. 
+
+![alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780137470198/files/graphics/pg40_Image_16.jpg)
+
+The output is shown as a function of two inputs *x1* and *x2*
+The perceptron divides the 2D space into 2 regions. 1 region is +1, the other -1. The line represents the boundary where weighted sum of inputs = 0 -> sign function will change value when input is 0:
+
+*w0x0* + *w1x1* + *w2x2* = 0
+
+x2 is the y axis, so make x2 a function of x1:
+
+*x2* = -(*w1*/*w2*)*x1* -(*w0*/*w2*)
+
+So the gradient = -(*w1*/*w2*) and *y* intercept = -(*w0*/*w2*)
 
 [code snippet 3](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%203.py)
+
+In this codde, learning progress in the order - red, magenta, yellow, cyan, blue.
+
+## Limitations of the Perceptron
 
