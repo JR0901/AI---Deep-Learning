@@ -15,8 +15,6 @@ Bias input - *x0* always equals 1
 ## Example of a Two-Input Perceptron
 [Code snippet 1](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%201.py)
 
-[Code snippet 1 notes](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%201%20notes.md)
-
 Difference between neural networks and logic gates:
 - Perceptron inputs aren't limited to boolen values. Perceptrons can only output 1 of 2 values - other neuron models can output range of real numbers
 - Neurons can take significantly more inputs than logic gates and perform more complex functions
@@ -25,9 +23,6 @@ Difference between neural networks and logic gates:
 ## The Perceptron Learning Algorithm
 
 [Code snippet 2](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%202.py)
-
-[Code snippet 2 notes](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%202%20notes.md)
-
 
 How do we determine the weights that affect the z values? -> Use the perceptron learning algorithm
 Perceptron learning algorithm is a supervised learning algorithm
@@ -56,15 +51,3 @@ Learning rate = η -> arbitrary constant -> hyperparameter - parameter not adjus
 
 Setting the learning rate to != 1 can lead to a faster convergance.
 Weight adjustments may vary because inputs vary (not only 1 & -1 like in previous example)
-
-
-![alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780137470198/files/graphics/pg40_Image_16.jpg)
-
-Typically 2 input functions that produce one output are represented by a 3d chart.
-A perceptron splits the 2D area into 2 regions with a straight line. One region represents the -1 output region and one represents the +1 output region.
-Derive the equation for the line that separates the two regions.
-Boundary is where sum of weights = 0.
-*w0x0* + *w1x1* + *w2x2* = 0
-*x2* is plotted on the *y* so the above formula should be made into a function of *x1*
-*x2* = -*w1*/*w2* x *x1* - *w0/w2*
-i.e. gradient = -*w1*/*w2*   y intercept = - *w0/w2*
