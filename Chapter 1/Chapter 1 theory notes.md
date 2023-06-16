@@ -51,3 +51,10 @@ Learning rate = η -> arbitrary constant -> hyperparameter - parameter not adjus
 
 Setting the learning rate to != 1 can lead to a faster convergance.
 Weight adjustments may vary because inputs vary (not only 1 & -1 like in previous example)
+
+The above code shows learning of the NAND function.
+
+Any real number input will produce either a 1 or -1 output.
+
+[code snippet 3](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%203.py)
+
