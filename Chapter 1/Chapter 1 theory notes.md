@@ -1,5 +1,7 @@
 # **Chapter 1 theory notes**
 
+DL - Deep Learning - class of machine learning algorithms that use multiple layers of computational units where each layer learns its own representation of the input data. These representations are combined by later layers in a hierarchical fashion.
+
 Perceptron - artificial neuron that uses the Signum function.
 
 Neurons have cell bodies, dendrites, a single axon and connected through synapses.
@@ -75,3 +77,27 @@ In this codde, learning progress in the order - red, magenta, yellow, cyan, blue
 
 ## Limitations of the Perceptron
 
+The 2 input perceptron can draw a straight line between two groups of data.
+
+If a straight line can't separate the data points, then it never converges -> can be solved with a curved line.
+
+Straight line graphs can solve linear classification problems. Other neuron models are needed to solve these problems.
+
+## Combining multiple perceptrons
+
+If 2 linear graphs can separate the data, the problem will be solved if the correct data points can be extracted and outputted.
+Imagine the perceptron as a NAND gate used to build xor gates.
+If the combined output of 2 perceptrons we would get the right answer.
+
+![alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780137470198/files/graphics/pg47_Image_25.jpg)
+
+Fully connected - output of each neuron in one layer is connected to all neurons in the next layer.
+Feedfoward (multilevel perceptron) - No backwards connection - directed acrylic graphs. 
+
+Multi level neural network has an input layer, hidden layers and an output layer.
+
+In a fully connected network, a neuron in one layer recieves input from all other neurons in the immediately preceding layer.
+A feedforward network or multilevel perceptron has no cycles. Input layer has no neurons. The outputs of neurons in a hidden layer are not visible outside of the network.
+DNNs - deep neural network - multiple hidden layeers. The output layer can have multiple neurons.
+
+A missing piece is that each layer learns its own representation. 
