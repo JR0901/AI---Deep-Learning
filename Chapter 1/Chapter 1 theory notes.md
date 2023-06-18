@@ -2,6 +2,8 @@
 
 DL - Deep Learning - class of machine learning algorithms that use multiple layers of computational units where each layer learns its own representation of the input data. These representations are combined by later layers in a hierarchical fashion.
 
+DL - Deep Learning - class of machine learning algorithms that use multiple layers of computational units where each layer learns its own representation of the input data. These representations are combined by later layers in a hierarchical fashion.
+
 Perceptron - artificial neuron that uses the Signum function.
 
 Neurons have cell bodies, dendrites, a single axon and connected through synapses.
@@ -101,3 +103,5 @@ A feedforward network or multilevel perceptron has no cycles. Input layer has no
 DNNs - deep neural network - multiple hidden layeers. The output layer can have multiple neurons.
 
 A missing piece is that each layer learns its own representation. 
+
+The back propogation algorithm was applied to various problem types and was popularised for neural networks - used to train feedforward networks.
