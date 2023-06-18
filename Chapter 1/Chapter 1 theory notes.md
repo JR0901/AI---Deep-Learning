@@ -2,6 +2,8 @@
 
 DL - Deep Learning - class of machine learning algorithms that use multiple layers of computational units where each layer learns its own representation of the input data. These representations are combined by later layers in a hierarchical fashion.
 
+DL - Deep Learning - class of machine learning algorithms that use multiple layers of computational units where each layer learns its own representation of the input data. These representations are combined by later layers in a hierarchical fashion.
+
 Perceptron - artificial neuron that uses the Signum function.
 
 Neurons have cell bodies, dendrites, a single axon and connected through synapses.
