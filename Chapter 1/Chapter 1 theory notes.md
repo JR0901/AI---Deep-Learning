@@ -27,9 +27,9 @@ Difference between neural networks and logic gates:
 [Code snippet 2](https://github.com/JR0901/AI---Deep-Learning/blob/main/Chapter%201/Code%20snippet%202.py)
 
 How do we determine the weights that affect the z values? -> Use the perceptron learning algorithm
-`Perceptron learning algorithm` is a supervised learning algorithm
+Perceptron learning algorithm is a supervised learning algorithm
   -> implies that the model is given inputs and desired output data (ground truth).
-    -> with the expectation that the model will learn the relationship between the input and output
+  -> with the expectation that the model will learn the relationship between the input and output
 
 `unsupervised learning` - learning algorithm that finds patterns in the data itself with no ground truth.
 Example - natural language text
@@ -93,15 +93,32 @@ If the combined output of 2 perceptrons we would get the right answer.
 ![alt text](https://learning.oreilly.com/api/v2/epubs/urn:orm:book:9780137470198/files/graphics/pg47_Image_25.jpg)
 
 `Fully connected` - output of each neuron in one layer is connected to all neurons in the next layer.
-Feedfoward (multilevel perceptron) - No backwards connection - directed acrylic graphs. 
+`Feedfoward (multilevel perceptron)` - No backwards connection - directed acrylic graphs. 
 
 Multi level neural network has an input layer, hidden layers and an output layer.
 
 In a fully connected network, a neuron in one layer recieves input from all other neurons in the immediately preceding layer.
 A feedforward network or multilevel perceptron has no cycles. Input layer has no neurons. The outputs of neurons in a hidden layer are not visible outside of the network.
-
 `DNNs` - deep neural network - multiple hidden layeers. The output layer can have multiple neurons.
 
 A missing piece is that each layer learns its own representation. 
 
 The back propogation algorithm was applied to various problem types and was popularised for neural networks - used to train feedforward networks.
+
+## Implementing Perceptrons with Linear Algebra
+
+Pythons numPy package is used for efficient scientific computations. It makes use of the Basic Linear Algebra Subprograms (BLAS). For GPUs, it can run CUDA BLAS which is optimised for GPUs which is a lot quicker than CPUs.
+
+`cuDNN` - library for specifically developed to accelerate neural network computations done by the GPU.
+
+The inputs (*x*), corresponding weights (*w*), intermediate representations (*z*) and outputs (*y*) can be represented in a vector variable.
+ __*x*__ = (*x0*, *x1*, ⋮, *xn*)
+
+`Array = row vector`
+
+`Vector addition` - Adds each element in vectorA to corresponding element in vectorB
+
+`Dot product` - Multiplies each element in vectorA to corresponding element in vectorB. *This was how the weighted sum was calculated in the perceptron*
+
+We can represent the weights for a single neuron in a single vector. 
+For multiple neurons we can represent a set of input examples as a set of vectors in a matrix.
