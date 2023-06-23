@@ -122,3 +122,5 @@ The inputs (*x*), corresponding weights (*w*), intermediate representations (*z*
 
 We can represent the weights for a single neuron in a single vector. 
 For multiple neurons we can represent a set of input examples as a set of vectors in a matrix.
+
+
